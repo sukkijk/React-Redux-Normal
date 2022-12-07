@@ -8,9 +8,9 @@ export default function CallbackComponent() {
   const increment = () => {
     setCount((c) => c + 1);
   };
-  const addTodo = useCallback(() => {
+  const addTodo = () => {
     setTodos((t) => [...t, "New Todo"]);
-  },[todos]);
+  }
 
   return (
     <>
